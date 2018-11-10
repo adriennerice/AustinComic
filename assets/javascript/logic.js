@@ -38,7 +38,6 @@ $("#submit").on("click", function(event) {
     console.log(signUp.email);
     console.log(signUp.zipCode);
   
-    alert("Thank you for signing-up!");
   
     // Clears all of the text-boxes
     $("#firstName").val("");
