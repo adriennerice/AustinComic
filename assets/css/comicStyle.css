@@ -1,0 +1,15 @@
+h1 {
+    text-align: center;
+}
+
+.header-top {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.nav-item {
+    height: 50px;
+}
+
+nav {
+    margin-top: 120px;   
+}
