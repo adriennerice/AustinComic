@@ -2,8 +2,29 @@
     width: 250px;
     height: 300px;
     padding-bottom: 10px;
+    
 }
 
-#abutheader{
+#aboutheader{
     text-align: center;
+    color: white;
+}
+
+body{
+    background-color: black;
+    background-image: url('../images/AboutUs/backer002.jpg');
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+    height: 800px;
+    text-align: center;
+}
+
+.container{
+    color: white;
+}
+
+#stan{
+    width: 300px;
+    height: 300px;
 }
