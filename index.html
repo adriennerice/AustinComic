@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/comicStyle.css">
     <link rel="stylesheet" type="text/css" href="MyFontsWebfontsKit.css"/>
 
@@ -54,10 +57,207 @@
             
           </div>
           <div id="section2"> 
-            <h2>Yelp</h2>
+            <!-- <h2>Yelp</h2>
             <p>
                 Love a juicy burger? Into flavorful and exotic? Every hero needs to fuel up after a good Comi-Con. We have collected the best of the best for every taste bud!
-            </p>
+            </p> -->
+
+            <div class="container">
+                <h2>Yelp Reviews in the Area <i class="fa fa-yelp" style="font-size:48px;color:red"></i></h2>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card left">
+                             
+            
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                                <div class="card right">
+                                 
+                
+                                </div>
+                            </div>
+                     </div>
+               
+                    <script>
+                        var businessIDs = [
+                        "wArcCMVnrl_tc9MULW-0CQ",
+                        "sH3UsolKjik01u0HlQ9_0Q",
+                        "F1odkZWmcXGylij8HjRq6Q",
+                        "WCqcYtJ4rUxA4bIzjOfzqg"
+                        ]
+            
+                        var businessNames = [
+                            "Heist Brewery",
+                            "Three Amigos Mexican Grill & Cantina",
+                            "VBGB",
+                            "Vapiano"
+                        ]
+                        var j = 0;
+                        
+                        for(var i = 0;i <businessIDs.length;i++){
+            
+                            var myurl = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/"+businessIDs[i]+"/reviews"
+                   
+                            $.ajax({
+                               url: myurl,
+                               headers: {
+                                'Authorization':'Bearer -luV8OwRPCzkvYevJh-qAVjTvRRmgvr1bQ2Ixiw5zFEt5BECSPvXHvwLg8rGoNAz-n5ErCARrMsGop6b-bwgnHcrutfn4cUnJDHqGUzIIoBafkWas21n78VAvw7nW3Yx',
+                            },
+                               method: 'GET',
+                               dataType: 'json',
+                              
+                            }).then(function(result) {
+                              
+                               
+                               
+                                var card = $("<div>").addClass("card-body");
+                                var busName = $("<h3>").text(businessNames[j]);
+                                    //cool stuff
+                              
+                                var newList = $("<ul>");
+                                var rating = $("<li>").text("Rating: "+ result.reviews[0].rating);
+                                var text = $("<li>").text("Review: "+ result.reviews[0].text);
+                                var url = $("<li>").html("Url: <a href="+ result.reviews[0].url+ "> Go to Yelp Review</a>");
+                            
+                                $(newList).append(rating, text, url);
+            
+                                $(card).append(busName, newList);
+            
+                               if(j < 2) {
+                                   $(".left").append(card)
+                               }
+                               else{
+                                   $(".right").append(card)
+                               }
+            
+                                console.log(result);
+                                console.log(businessNames[j-1]);
+                                console.log(result.reviews[0].rating);
+                                console.log(result.reviews[0].text);
+                                console.log(result.reviews[0].url);
+            
+                                j = j + 1;
+                            }
+            
+                            );  
+            
+                        }
+                         </script>
+            </div>
+            
+            <br>
+            
+            <!-- MAP -->
+            <div id="map"></div>
+             
+            
+                <script>
+                    function initMap(){
+                        //Map Options
+                       var options = {
+                           zoom:13,
+                           center:{lat:35.2271,lng:-80.8431}
+                       } 
+                       //New Map
+                       var map = new 
+                       google.maps.Map(document.getElementById('map'), options);
+            
+                       //Listen for click on map
+            
+                       google.maps.event.addListener(map, 'click',
+                       function(event){
+                           // Add additinal markers
+                           addMarker({coords:event.latLng});
+                       }
+                       )
+            
+                       /*
+                       //Add marker
+                       var marker = new google.maps.Marker({
+                           position:{lat:35.2284,lng:-80.8349},
+                           map:map,
+                             //change icon marker type
+                           icon:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+                       });
+            
+                       var infoWindow = new google.maps.InfoWindow({
+                           content:'<h1>UNCC Center City</h1>'
+                       });
+            
+                       marker.addListener('click', function(){
+                           infoWindow.open(map, marker);
+                       });
+                       */
+            
+                       //Array of markers
+                       
+                       var markers = [
+                       {
+                           coords:{lat:35.2455,lng:-80.8094},
+                            // iconImage: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+                            content:'<h3>Heist Brewery</h3>'
+                       },
+                       {
+                           coords:{lat:35.2185,lng:-80.7948},
+                           content:'<h3>Three Amigos Mexican Grill & Catina</h3>'
+                           },
+                           
+                       {
+                           coords:{lat:35.2261,lng:-80.8444},
+                           content:'<h3>Vapiano</h3>'
+                           },
+            
+                       {
+                           coords:{lat:35.2407,lng:-80.8451},
+                           content:'<h3>VBGB Beer Hall Garden/Restaurant</h3>'
+                           }
+            
+                       ];
+            
+                       // Loop through markers
+                       for(var i = 0;i <markers.length;i++){
+            
+                           //Add Marker
+                        addMarker(markers[i]);
+                       }
+            
+                       // Add Marker Function
+            
+                       function addMarker(props){
+                        var marker = new google.maps.Marker({
+                           position:props.coords,
+                           map:map,
+                             //change icon marker type
+                           //icon:props.iconImage
+                       });
+            
+                       //Check for custom icon
+                        if(props.iconImage){
+                            //Set icon image
+                            marker.setIcon(props.iconImage);
+                        }
+            
+                        if(props.content){
+                            var infoWindow = new google.maps.InfoWindow({
+                           content:props.content
+                       });
+            
+                       marker.addListener('click', function(){
+                           infoWindow.open(map, marker);
+                       });
+                        }
+                       }
+                     }
+            
+            
+            
+                </script>
+                <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlJWz1I9XUeUUKfRRfNhA2MZAmH179wrY&callback=initMap">
+                    </script>
+            </div>
+            
           
           </div>        
           <div id="section3">         

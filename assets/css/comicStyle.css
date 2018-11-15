@@ -42,3 +42,8 @@ nav {
   #myBtn:hover {
     background-color: #555;
   }
+
+  #map{
+    height: 400px;
+    width: 100%;
+}
