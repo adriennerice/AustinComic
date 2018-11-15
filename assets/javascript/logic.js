@@ -42,7 +42,9 @@ $("#submit").on("click", function(event) {
     // Clears all of the text-boxes
     $("#firstName").val("");
     $("#email").val("");
-    $("zipCode").val("");
+    $("#zipCode").val("");
+
+    $(".feedback").css("visibility","visible");
   });
   
   // Create Firebase event for adding employee to the database and a row in the html when a user adds an entry

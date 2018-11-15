@@ -1,5 +1,5 @@
 body {
-    background-image: url(Fine-Halftone-Screen-Medium.png) ;
+    background-image: url("/assets/images/Heavy-Halftone-Scren-Large.png");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -17,6 +17,11 @@ h1 {
 }
 .nav-item {
     height: 50px;
+    margin: 10px;
+}
+
+.nav-link {
+    font-size: 25px;
 }
 
 nav {
@@ -46,4 +51,11 @@ nav {
   #map{
     height: 400px;
     width: 100%;
+}
+
+.feedback {
+    visibility: hidden;
+    background-color: lightseagreen;
+    font-weight: bold;
+    text-align: center;
 }
