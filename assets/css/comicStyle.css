@@ -1,5 +1,17 @@
-body {
-    background-image: url(Fine-Halftone-Screen-Medium.png) ;
+html,body, {
+    height:100%;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+
+
+*{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+.background-cover{
+    background-color: #e8eef0;
+    background-image: url("../images/Fine-Halftone-Screen-Medium.png");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -7,21 +19,102 @@ body {
     text-align: left;
 }
 
-h1 {
-    text-align: center;
+
+h2 {
+    font-size: 30px;
 }
+
+.image{
+    width: 100%;
+}
+
 
 .header-top {
     margin-top: 50px;
     margin-bottom: 50px;
-}
-.nav-item {
-    height: 50px;
+    font-size: 45px;
+    text-align: left;
+    background-color: #f1a90c;
+    padding: 40;
+    border: 2px solid #111;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    padding: 10px;
 }
 
+
 nav {
-    margin-top: 120px;   
+    /* margin-top: 120px; */
+    background-color: #111;
+    font-family:'Nunito Sans', sans-serif;
+    overflow-x: hidden;
+    line-height: 250%;
+    font-size: 25px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+
 }
+
+
+#section1 {
+    border: 2px solid #111;
+    padding: 5%;
+    background-color: #f0efe8;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 60px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+
+}
+
+
+#section2 {
+    border: 2px solid #111;
+    padding: 5%;
+    background-color: #e8eef0;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 60px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+
+}
+
+#section4 {
+    border: 2px solid #111;
+    padding: 5%;
+    background-color: #e8eef0;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 60px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+
+}
+
+h4 {
+    color: #ff0000;
+}
+
+.nav-link{
+    color: #fdad03;
+
+}
+
+.btn-primary {
+    color: rgb(255, 255, 255);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    padding: 10px;
+    background: #fdad03;
+    margin: 10px 30px 30px 30px;
+    font-size: 20px;
+}
+
+
 
 #myBtn {
     display: none;
@@ -37,8 +130,12 @@ nav {
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    padding: 10px;
+    background: blueviolet;
+    
   }
   
   #myBtn:hover {
-    background-color: #555;
+    color: #ffc805;
   }
