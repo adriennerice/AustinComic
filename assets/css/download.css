@@ -1,0 +1,31 @@
+.jumbotron{
+    background-image: url('../images/Applogo.png');
+    color: white;
+    height: 350px;
+    width: 100%;
+    
+}
+
+#jumbohead, #jumbobody{
+    background-color: black;
+    text-align: center;
+}
+
+#getit img{
+    width: 100px;
+    height: 50px;
+}
+
+table{
+    text-align: center;
+    border: silver solid 3px;
+}
+
+#liner{
+    background-color: black;
+}
+
+.footer{
+    background-color: black;
+
+}

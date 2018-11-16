@@ -139,3 +139,15 @@ h4 {
   #myBtn:hover {
     color: #ffc805;
   }
+
+  #map{
+    height: 400px;
+    width: 100%;
+}
+
+.feedback {
+    visibility: hidden;
+    background-color: lightseagreen;
+    font-weight: bold;
+    text-align: center;
+}

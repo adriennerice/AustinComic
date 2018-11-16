@@ -3,16 +3,18 @@
     height: 300px;
     padding-bottom: 10px;
     
+    
 }
 
 #aboutheader{
     text-align: center;
-    color: white;
+    color: Yellow;
+    background-color: black;
 }
 
 body{
     background-color: black;
-    background-image: url('../images/AboutUs/backer002.jpg');
+    background-image: url('../images/AboutUs/comicmix.png');
     background-position: center;
     background-repeat: repeat-y;
     background-size: cover;
@@ -22,6 +24,8 @@ body{
 
 .container{
     color: white;
+    background-color: black;
+    border: silver solid 6px;
 }
 
 #stan{
