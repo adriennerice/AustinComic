@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
@@ -17,34 +16,37 @@
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="0">
     <div class="container-fluid">
       
-      <div class="row">
+      <div class="row sidnav">
           
           
-        <nav class="col-sm-3 col-4 nav" id="myScrollspy">
-           
-           
+        <nav class="col-lg-2 nav" id="myScrollspy">
+          
           <ul class="nav nav-pills flex-column">
             <li class="nav-item">
-                <a class="nav-link" href="#section5"  roll="tab">News</a>
+              <a class="nav-link" href="#section1" roll="tab">News</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#section1" roll="tab">Conventions</a>
+              <a class="nav-link" href="#section2" roll="tab">Conventions</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#section2" roll="tab">Yelp</a>
+              <a class="nav-link" href="#section4" roll="tab">Speakers</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#section3" roll="tab">Sign-Up</a>
+              <a class="nav-link" href="#section5" roll="tab">Sign-Up</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#section4" roll="tab">Trivia</a>
+              <a class="nav-link" href="#section6" roll="tab">Trivia</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="aboutus.html">About Us</a>
+              <a class="nav-link" href="#section7" roll="tab">About Us</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="yelp.html" roll="tab">Yelp</a>
+            </li>
+
           </ul>
         </nav>
-        <div class="col-sm-9 col-8 background-cover background-image">
+        <div class="col-lg-10 background-cover background-image">
             <img src="assets/images/convenience store.jpg" style="width: 250px; height: 250px;">
           <h1 class="header-top">We Help Heroes Connect
           </h1>
@@ -53,12 +55,12 @@
             <h2></h2>
         <div class="col-lg-9">
           <h1 class="header-top">Austin Comic Collective</h1>
-          <div id="section5"> 
+          <div id="section1"> 
             <h2>News</h2>
             <h5>Stan Lee Tribute</h5> 
-          
+            <image src="assets/images/StanLee_001.png" id="stan1"></image>
           </div>
-          <div id="section1">    
+          <div id="section2">    
             <h2>Conventions</h2>
             <p>
               The COMIC CONVENTION CONCIERGE was founded in 2018 by Team Austin, Group #1 of UNC Charlotte's 
@@ -77,38 +79,8 @@
             </div>
             </p>
             
-          </div>
-          <div id="section2"> 
-            <!-- <h2>Yelp</h2>
-            <p>
-                Love a juicy burger? Into flavorful and exotic? Every hero needs to fuel up after a good Comi-Con. We have collected the best of the best for every taste bud!
-            </p> -->
-
-            <div class="container">
-                <h2>Yelp Reviews in the Area <i class="fa fa-yelp" style="font-size:48px;color:red"></i></h2>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="card left">
-                
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="card right">
-
-                            </div>
-                        </div>
-                    </div>  
-            </div>
-          </div>
-            <br>
-            
-<!-- MAP -->
-    <div id="map"></div>
-    <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlJWz1I9XUeUUKfRRfNhA2MZAmH179wrY&callback=initMap">
-      </script>
-                    
-          <div id="section3">         
+          </div>    
+          <div id="section4">         
             <h2></h2>
             <p>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal">
@@ -117,6 +89,13 @@
             </p>
           </div>
           <div id="section4">         
+            <h2>Speakers</h2>
+            <p>
+              <a href="speakers.html">Click here</a> for additional information about the Speakers scheduled for the convention.
+            </p>
+              
+          </div>      
+          <div id="section6">         
             <h2>Trivia</h2>
             
               <h4>Comic-Con 2019 is upon us!!</h4> 
@@ -130,9 +109,16 @@
               
             </p>
             <p> Try your luck at Comic trivia. 
-                <h2><a href="trivia.html">Click for Trivia</a></h2>
+                <h4><a href="trivia.html">Click for Trivia</a></h4>
             </p>
-          </div>      
+          </div>  
+          <div id="section7">         
+            <h2>About Us</h2>
+            <p>
+              <a href="aboutus.html">Click here</a> for more information about the Founding members.
+            </p>
+              
+          </div>     
         </div>
       </div>
     </div>
@@ -184,3 +170,5 @@
     <script src="assets/javascript/logic.js"></script>
 </body>
 </html>
+
+

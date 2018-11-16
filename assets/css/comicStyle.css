@@ -28,7 +28,6 @@ h2 {
     width: 100%;
 }
 
-
 .header-top {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -52,7 +51,6 @@ nav {
     line-height: 250%;
     font-size: 25px;
     box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
-
 }
 
 
@@ -70,7 +68,7 @@ nav {
 }
 
 
-#section2 {
+#section2,#section3 {
     border: 2px solid #111;
     padding: 5%;
     background-color: #e8eef0;
@@ -83,7 +81,7 @@ nav {
 
 }
 
-#section4 {
+#section4, #section5, #section6, #section7 {
     border: 2px solid #111;
     padding: 5%;
     background-color: #e8eef0;
@@ -114,8 +112,6 @@ h4 {
     font-size: 20px;
 }
 
-
-
 #myBtn {
     display: none;
     position: fixed;
@@ -136,18 +132,31 @@ h4 {
     
   }
   
-  #myBtn:hover {
+#myBtn:hover {
     color: #ffc805;
-  }
-
-  #map{
-    height: 400px;
-    width: 100%;
 }
+
 
 .feedback {
     visibility: hidden;
     background-color: lightseagreen;
     font-weight: bold;
     text-align: center;
+}
+
+#stan1 {
+    height: 250px;
+    width: 380px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
 }
