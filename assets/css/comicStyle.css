@@ -24,6 +24,11 @@ h2 {
     font-size: 30px;
 }
 
+#stan1 {
+    height: 250px;
+    width: 380px;
+}
+
 .image{
     width: 100%;
 }
@@ -142,11 +147,6 @@ h4 {
     background-color: lightseagreen;
     font-weight: bold;
     text-align: center;
-}
-
-#stan1 {
-    height: 250px;
-    width: 380px;
 }
 
 .sidenav {
