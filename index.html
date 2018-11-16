@@ -15,12 +15,9 @@
 </head>
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="0">
     <div class="container-fluid">
-      
+      <!-- Left Side Navigation -->
       <div class="row sidnav">
-          
-          
         <nav class="col-lg-2 nav" id="myScrollspy">
-          
           <ul class="nav nav-pills flex-column">
             <li class="nav-item">
               <a class="nav-link" href="#section1" roll="tab">News</a>
@@ -43,15 +40,15 @@
             <li class="nav-item">
               <a class="nav-link" href="yelp.html" roll="tab">Yelp</a>
             </li>
-
           </ul>
         </nav>
+
+        <!-- Main Content -->
         <div class="col-lg-10 background-cover background-image">
             <img src="assets/images/convenience store.jpg" style="width: 250px; height: 250px;">
           <h1 class="header-top">We Help Heroes Connect
           </h1>
           <div id="section1">  
-              
             <h2></h2>
         <div class="col-lg-9">
           <h1 class="header-top">Austin Comic Collective</h1>
@@ -78,9 +75,14 @@
               <img src="assets/images/image.jpg">
             </div>
             </p>
-            
           </div>    
           <div id="section3">         
+              <h2>Speakers</h2>
+              <p>
+                <a href="speakers.html">Click here</a> for additional information about the Speakers scheduled for the convention.
+              </p>
+            </div> 
+          <div id="section4">         
             <h2></h2>
             <p>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal">
@@ -88,16 +90,8 @@
                 </button>
             </p>
           </div>
-          <div id="section4">         
-            <h2>Speakers</h2>
-            <p>
-              <a href="speakers.html">Click here</a> for additional information about the Speakers scheduled for the convention.
-            </p>
-              
-          </div>      
           <div id="section5">         
             <h2>Trivia</h2>
-            
               <h4>Comic-Con 2019 is upon us!!</h4> 
               <p> 
               That means one of the greatest meeting of geeks the world has 
@@ -106,7 +100,6 @@
               You've probably seen a Marvel or Batman movie or two. But how well do you know their original source
                material, the comics themselves? Well, we want toput your knowledge to the test with 15 questions meant to see if you 
               know your Batman from your Man-Bat.
-              
             </p>
             <p> Try your luck at Comic trivia. 
                 <h4><a href="trivia.html">Click for Trivia</a></h4>
@@ -117,14 +110,13 @@
             <p>
               <a href="aboutus.html">Click here</a> for more information about the Founding members.
             </p>
-              
           </div>     
         </div>
       </div>
     </div>
     
   
-  <!-- Modal  -->
+  <!-- Modal with Newsletter Sign-up form -->
   <div class="modal fade" id="Modal" tabindex="-1" role="dialog" data-backdrop="static">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -150,7 +142,7 @@
             </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
           <button type="button" class="btn btn-primary" id="submit">Submit</button>
           <div class="feedback">Thank you for signing up for our newsletter!</div>
         </form>
@@ -159,15 +151,16 @@
     </div>
   </div> 
 
+  <!-- Back to top button -->
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-  
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
-    <script src="assets/javascript/app.js"></script>
-    <script src="assets/javascript/logic.js"></script>
+   <!-- Scripts  -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+  <script src="assets/javascript/app.js"></script>
+  <script src="assets/javascript/logic.js"></script>
+
 </body>
 </html>
 

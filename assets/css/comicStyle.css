@@ -3,11 +3,9 @@ html,body, {
     font-family: 'Nunito Sans', sans-serif;
   }
 
-
 *{
     font-family: 'Nunito Sans', sans-serif;
 }
-
 
 .background-cover{
     background-color: #e8eef0;
@@ -19,11 +17,11 @@ html,body, {
     text-align: left;
 }
 
-
 h2 {
     font-size: 30px;
 }
 
+/* Stan Lee Tribute Image */
 #stan1 {
     height: 250px;
     width: 380px;
@@ -47,9 +45,7 @@ h2 {
     padding: 10px;
 }
 
-
 nav {
-    /* margin-top: 120px; */
     background-color: #111;
     font-family:'Nunito Sans', sans-serif;
     overflow-x: hidden;
@@ -58,7 +54,7 @@ nav {
     box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 
-
+/* Main Body Nav Sections */
 #section1 {
     border: 2px solid #111;
     padding: 5%;
@@ -69,10 +65,9 @@ nav {
     margin-left: 10px;
     margin-bottom: 60px;
     box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
-
 }
 
-
+/* Main Body Nav Sections */
 #section2,#section3 {
     border: 2px solid #111;
     padding: 5%;
@@ -85,7 +80,7 @@ nav {
     box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 
 }
-
+/* Main Body Nav Sections */
 #section4, #section5, #section6, #section7 {
     border: 2px solid #111;
     padding: 5%;
@@ -105,7 +100,6 @@ h4 {
 
 .nav-link{
     color: #fdad03;
-
 }
 
 .btn-primary {
@@ -141,7 +135,7 @@ h4 {
     color: #ffc805;
 }
 
-
+/* Newsletter Modal Form Confirmation */
 .feedback {
     visibility: hidden;
     background-color: lightseagreen;
@@ -149,14 +143,3 @@ h4 {
     text-align: center;
 }
 
-.sidenav {
-    height: 100%;
-    width: 160px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    padding-top: 20px;
-}
