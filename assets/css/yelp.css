@@ -6,3 +6,10 @@
 body{
 font-family: 'Nunito Sans', sans-serif;
 }
+
+.footer{
+    color: white;
+    background-color: black;
+    border: black solid 6px;
+    width:100%;
+}
