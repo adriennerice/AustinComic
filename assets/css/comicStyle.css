@@ -143,3 +143,12 @@ h4 {
     text-align: center;
 }
 
+#trivia{
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    padding: 10px;
+    background: rgb(226, 116, 43);
+}
