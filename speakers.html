@@ -11,7 +11,7 @@
 </head>
 
 <body>
-
+    <!--This container is for displaying the Marvel banner and the creators attending the convention-->
   <div class="container" text-align="center">
     <div class="row">
       <div class="col-md-12">
@@ -19,12 +19,15 @@
         <h1>List of Marvel Panelists Appearing at Hero Con!</h1>
       </div>
     </div>
-    
+
+    <!-- The following row is a placeholder for the results tomdisplay from the Marvel API call. -->
     <div class="row">
       <div class="col-md-6">
         <div id="createdisplay"></div>
       </div>
-      <!-- <hr background-color="blue 3px"> -->
+
+      <!-- The following is an actual map of the Charlotte Convention Center, with a color coded legend of 
+    where the Marvel creators will be located during the convention. -->
       <div class="col-md-6">
         <img src="assets/images/api_map.png" height="500px" width="800px" id="marvelmap">
       </div>
@@ -32,11 +35,13 @@
 </div>
 
 
-
+<!-- This div is a validator that the Marvel API call brings back data as information displayed here is 
+filtered from the callback JSON data -->
   <div class="container" id="marvelfoot">
     <span class="text-muted" id="footer"></span>
   </div>
 
+  <!--This sticky footer has all the standard links to the pages. Formatting is different for variety.  -->
 <footer class="footer" >
     <div class="container" id="otherfoot">
         <div class="row">
@@ -70,7 +75,6 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  
-</body>
 
+</body>
 </html>
