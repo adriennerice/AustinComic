@@ -1,0 +1,33 @@
+body
+{
+    background-image: url('../images/BP_back.jpg');
+    background-size: contain;
+}
+#otherfoot{
+    color: white;
+    background-color: black;
+    border: black solid 3px;
+    width:100%;
+}
+
+#marvelfoot{
+    background-color: gray;
+    text-align: center;
+}
+
+#createdisplay{
+    background-color: silver;
+    width: 50%;
+    border: black solid 2px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+#marvelmap{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#createdisplay li:nth-child(1){
+    color: green;
+}

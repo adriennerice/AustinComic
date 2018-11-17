@@ -25,10 +25,12 @@ h2 {
 #stan1 {
     height: 250px;
     width: 380px;
+    margin-left: 100px;
 }
 
 .image{
     width: 100%;
+    margin-left:100px;
 }
 
 .header-top {
@@ -151,4 +153,11 @@ h4 {
     box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
     padding: 10px;
     background: rgb(226, 116, 43);
+}
+
+.footer{
+    color: white;
+    background-color: black;
+    border: silver solid 6px;
+    width:100%;
 }

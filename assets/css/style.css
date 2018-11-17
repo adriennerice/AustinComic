@@ -74,3 +74,9 @@ h2, #message, #finalMessage{
 		size: 200%;
 	}	
 }
+#footcontain{
+    color: white;
+    background-color: black;
+    border: black solid 6px;
+    width:100%;
+}
