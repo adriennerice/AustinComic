@@ -15,7 +15,7 @@
 <body>
     
 <div class="container">
-    <h2>Yelp Reviews in the Area <i class="fa fa-yelp" style="font-size:48px;color:red"></i></h2>
+    <h2><strong>Yelp Reviews in the Area</strong> <i class="fa fa-yelp" style="font-size:48px;color:red"></i></h2>
         <div class="row">
             <div class="col-sm-6">
                 <div class="card left card border-danger mb-3">
@@ -65,7 +65,6 @@
                    
                     var card = $("<div>").addClass("card-body");
                     var busName = $("<h3>").text(businessNames[j]);
-                        //cool stuff
                   
                     var newList = $("<ul>");
                     var rating = $("<li>").text("Rating: "+ result.reviews[0].rating);
