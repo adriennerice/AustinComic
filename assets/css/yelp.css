@@ -5,7 +5,10 @@
 
 body{
 font-family: 'Nunito Sans', sans-serif;
+background-image: url(../images/Fine-Halftone-Screen-Medium.png);
+background-size: cover;
 }
+
 
 .footer{
     color: white;
