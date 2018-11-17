@@ -1,7 +1,7 @@
 
 $(document).ready(function()
 {
-    var queryURL = "http://gateway.marvel.com/v1/public/creators/30/comics?ts=1&apikey=90b1e5ece9b3a617d39502d3d3e3870d&hash=609a2b36f1ef8abe0a89c228df7370bf";
+    var queryURL = "https://gateway.marvel.com/v1/public/creators/30/comics?ts=1&apikey=90b1e5ece9b3a617d39502d3d3e3870d&hash=609a2b36f1ef8abe0a89c228df7370bf";
     var footsy = document.getElementById("footer");
     
     var marvelContainer = $('#createdisplay');
